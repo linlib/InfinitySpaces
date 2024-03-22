@@ -439,7 +439,7 @@ Here are the packages that I use
 \begin{tcolorbox}[width=5.8in,colback={white},coltitle=white]
 \begin{center}
 \ \\
-\scalebox{3}{\texttt{𝔼}_{\infty} \texttt{𝕒𝕟𝕕} \texttt{𝔸}_{\infty} \texttt{𝕊𝕡𝕒𝕔𝕖𝕤 𝕒𝕟𝕕 𝕥𝕙𝕖𝕚𝕣 𝔸𝕔𝕥𝕚𝕠𝕟𝕤}}\\
+\scalebox{3}{\texttt{∞-Spaces}}\\
 \ \\
 \end{center}
 \end{tcolorbox}
@@ -471,7 +471,7 @@ $\texttt{IntGrp}$ & \texttt{D(}∞\texttt{-Grpd₀)} & Σ & Ω & P  & $\texttt{I
 %LEAN: 
 \begin{center}
 \begin{tcolorbox}[width=4.13in,colback={white},coltitle=white]
-\scalebox{2}{𝔼𛲔 𝔻𝕖𝕒𝕟 𝕐𝕠𝕦𝕟𝕘 𝕒𝕟𝕕 𝕁𝕚𝕒𝕫𝕙𝕖𝕟 𝕏𝕚𝕒}
+\scalebox{1.5}{E. Dean Young}
 \end{tcolorbox}
 \end{center}
 
@@ -530,10 +530,6 @@ Copyright\ \textcopyright \ October 19th 2023 Elliot Dean Young and Jiazhen Xia.
  
 \newpage
 
-
-
-\newpage
-
 \ \\
 \ \\
 \ \\
@@ -555,18 +551,69 @@ We wish to acknowledge the collaborative efforts of E. Dean Young and Jiazhen Xi
 
 
 \newpage
+
+
+
+\section{Introduction}
+
+In this document I would like to explore derivations and connections.\\
+
+\begin{enumerate}
+\item Derivations
+\item Connections
+\end{enumerate}
+
+In this section, which makes use of the previous section concerning Haar integral, I intend to cover the ordinary versions of Poincare duality, Pontrjagin duality, and Fourier duality, as well as versions of these theorems using language enabled by the previous repositories. This won't culminate until far into the future, so for now I have jotted down some sketches.\\
+
+I begin by considering the concept of a finite extension, as well as the separable closure and the maximal unramified extension. This will be used in developing the main example in what ensues. Here is a tentative list of sections:\\
+
+
+
+
 \section{Contents}
 
 \iffalse
-"product"
+{
+\footnotesize
+\begin{longtable}{|| l || l ||} 
+\hline
+\multicolumn{1}{||c||}{$\texttt{Section}$} & \multicolumn{1}{|c||}{$\texttt{Description}$} \\
+\hline
+\hline
+Unfinished & \\
+\hline
+Contents & \\
+\hline
+Unicode & \\
+\hline
+Introduction & \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{PART I: } Based connected ∞-groupoids} \\
+\hline \hline
+ \multicolumn{2}{||c||}{\texttt{Chapter 1: }The Puppe Sequence for Based Connected ∞-Groupoids} \\
+\hline \hline
+The Puppe sequence & \scalebox{0.8}{$\cdots$ ⭢ π₁(E₀) ⭢ π₁(B₀) ⭢ π₀(ω (𝟙 X₀)) ⭢ π₀(E₀) ⭢ π₀(B₀)}  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 2: }The Smash Product in ∞-Grpd₀} \\
+\hline \hline
+\hline \hline
+\end{longtable}
+}
 \fi
+
+
+
+\iffalse
+https://mathoverflow.net/questions/464176/bⁿ-and-coherence
+\fi
+
+
+after this we develop chain complexes of these.\\
+
 
 The table of contents below reflects the tentative long-term goals of the authors, with the main goal the pursuit of the Whitehead theorem for a point-set model involving Mathlib's predefined homotopy groups.\\
 
 \begin{enumerate}
-\item [-,A] and its commutative monoid structure
-\item H spaces?
-\item adjunctions involving H spaces
 \item cup and cap product
 \end{enumerate}
 
@@ -578,19 +625,171 @@ Ideas for future applications:
 
 \begin{enumerate}
 \item One of the basic things I wanted out of this was homotopy colimit preserving maps (Eⁱⁿᶠ-Alg A)ᵒᵖ ⭢ ∞-Grpd
+\end{enumerate}
+
+
+
+\part{PART I: ABELIAN GROUPS AND ∞-SPACES}
+
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{||l || l || l || l ||} 
+ \hline
+  \multicolumn{4}{||c||}{\texttt{Eight Structures}} \\
+ \hline
+ \multicolumn{2}{||c||}{\texttt{Strict}}  &  \multicolumn{2}{||c||}{\texttt{Lax}} \\
+ \hline
+ \texttt{Unitial} &  \texttt{Actional}  &  \texttt{Unitial} &  \texttt{Actional}\\
+ \hline \hline
+ \texttt{InternalMonoid}  & \texttt{InternalMonoidAction} & \texttt{OperadicMonoid} & \texttt{OperadicMonoidAction} \\ 
+ \hline
+ \texttt{InternalCommutative Monoid} & \texttt{InternalCommutativeMonoidAction} & \texttt{OperadicMonoid} & \texttt{OperadicMonoidAction} \\ 
+ \hline
+ \hline
+\end{tabular}
+\end{center}
+}
+
+
+\chapter{Abelian Groups}
+
+Abelian groups are internal groups in internal groups.
+
+
+
+\chapter{Tensor Product of Abelian Groups}
+
+
+
+
+\chapter{Rings and Modules}
+
+make sure to include Alg
+
+
+
+
+\chapter{∞-Spaces}
+
+\iffalse
+OperadicCategory² ∞-Cat, OperadicGroupoid² ∞-Grpd, and OperadicGroup² ∞-Grpd
+\fi
+
+
+\begin{enumerate}
+\item OperadicCategory², OperadicGroupoid², OperadicGroup²
+\end{enumerate}
+
+
+Could ∞-spaces be operadic groups in operadic groups?
+
+
+
+\iffalse
+B.obj (M × N) ⭢ (B.obj M) × (B.obj N)
+
+gives
+"the little squares operad"
+
+\fi
+
+
+
+
+\chapter{Tensor Product of ∞-Spaces}
+
+
+
+
+\chapter{∞-Rings and ∞-Modules}
+
+\iffalse
+Besides that my ∞-spaces are different, I would like to make my Ainfinity and Einfinity objects as similar as possible.
+\fi
+
+
+make sure to include ∞-Alg...
+
+
+
+
+\part{PART II: FREE ∞-RINGS AND FREE ∞-MODULES}
+
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{||l ||} 
+ \hline
+ \hline
+Set ⇄ AbelianGroup \\
+ \hline
+∞-Grpd ⇄ ∞-Space \\
+ \hline 
+ \hline
+Ring ⇄ ∞-Ring \\
+ \hline
+Mod R ⇄ ∞-Mod R \\
+ \hline
+ \hline
+\end{tabular}
+\end{center}
+}
+
+
+\chapter{∞-Grpd ⇄ ∞-Space}
+
+
+
+\begin{enumerate}
+\item πₙ of an ∞-space arising from an ∞-groupoid vs. Hₙ of 
 \item 
 \end{enumerate}
 
-\section{Introduction}
 
-In this document I would like to explore derivations and flat connections.\\
+\chapter{Ring ⇄ ∞-Ring}
 
-\begin{enumerate}
-\item Derivations
-\item Connections
-\end{enumerate}
+\iffalse
+Λ*... use a subscript with round braces for the strict and lax variations
+Ω as well
+λ for actional
+ω for actional
+\fi
 
-\section{Derivations}
+
+\chapter{Mod R ⇄ ∞-Mod R}
+
+\iffalse
+Λ*... use a subscript with round braces for the strict and lax variations
+Ω as well
+λ for actional
+ω for actional
+\fi
+
+
+
+\part{PART III: DERIVATIONS AND CONNECTIONS}
+
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{|| l || l ||} 
+\hline
+(Alg R)/B ⇄ Mod B  & (∞-Alg R)/B ⇄ ∞-Mod B \\
+ \hline 
+??? ⇄ ???  & ??? ⇄ ??? \\
+ \hline
+\end{tabular}
+\end{center}
+}
+
+\iffalse
+https://en.wikipedia.org/wiki/Connection_(vector_bundle)
+
+\fi
+
+
+\chapter{Derivations}
 
 \begin{enumerate}
 \item I would like to first construct the lie-algebra of derivations using the spectrum \texttt{Ωⁱⁿᶠ.obj X}. It seems related to coalgebra endomorphisms from \texttt{Ωⁱⁿᶠ.obj X} to itself.\\
@@ -598,41 +797,87 @@ In this document I would like to explore derivations and flat connections.\\
 \end{enumerate}
 
 
-\section{Connections}
+\chapter{Connections}
 
 \begin{enumerate}
 \item I would like to first construct the lie-algebra representation of flat connections using the spectrum \texttt{ωⁱⁿᶠ.obj X).obj V}.
-\item https://en.wikipedia.org/wiki/Connection_(vector_bundle)
+\item \iffalse https://en.wikipedia.org/wiki/Connection_(vector_bundle)\fi
 \item Lie algebra representations and ...
-\item Here we tensor $\texttt{((ωⁱⁿᶠ.obj X).obj V) ∧ ???}$ with the Lie-algebra of derivations...\\
+\item \\
 \item We can define differentiable and connective functionals in this context as well.
-\item https://en.wikipedia.org/wiki/Connection_(vector_bundle)
+\item \iffalse https://en.wikipedia.org/wiki/Connection_(vector_bundle)\fi
+\item Somehow connections are the dual of the free abelian group action
 \end{enumerate}
 
 
+\iffalse
+https://en.wikipedia.org/wiki/Connection_form
+\fi
 
 
 
-\section{Bibliography}
+
+
+    \iffalse
+    https://amathew.wordpress.com/2011/05/14/the-cotangent-complex-i-group-objects-in-categories-of-algebras/
+    \fi
+
+
+
+    \iffalse
+    I loaded them up onto degree negative one.
+    \fi
+
+
+
+    Some goals:
+    \begin{enumerate}
+    \item 
+    \end{enumerate}
+
+    \begin{enumerate}
+    \item smooth (etale locally ???)
+    \item analytic (etale locally ???)
+    \item [ℂP¹,ℂP¹] ≅ ℂ(x)
+    \item Our ℝ is ∂.obj ℤ regarded as an object in [γ⃗,∞\_(∞-Grpd)]
+    \item B.obj det : B.obj U(n) ⭢ B.obj U(1)
+    \item Which E${}_{\infty}$ Space have a Chern class?
+    \end{enumerate}
+
+    Cohomology with coefficients in $\texttt{[-,Bℂˣ]}$ plays a .\\
+
+    \iffalse
+    https://www.universiteitleiden.nl/binaries/content/assets/science/mi/scripties/bachbecker.pdf
+    \fi
 
 \begin{enumerate}
-\item 
+\item \iffalse https://en.wikipedia.org/wiki/Connection_(vector_bundle) \fi
+\item d2 is wedge with 
 \end{enumerate}
 
-
-\section{Introduction}
-
-In this section, which makes use of the previous section concerning Haar integral, I intend to cover the ordinary versions of Poincare duality, Pontrjagin duality, and Fourier duality, as well as versions of these theorems using language enabled by the previous repositories. This won't culminate until far into the future, so for now I have jotted down some sketches.\\
-
-I begin by considering the concept of a finite extension, as well as the separable closure and the maximal unramified extension. This will be used in developing the main example in what ensues. Here is a tentative list of sections:\\
+\chapter{∞-Derivations}
 
 
 
-\section{Bibliography}
+
+\chapter{∞-Connections}
+
+
+
+
+\newpage
+\newpage
+
+\chapter{Bibliography}
 
 \begin{enumerate}
-\item 
+\item Samuel Eilenberg and Saunders Mac Lane, "On the Groups H(π, n). I", Annals of Mathematics, Second Series, Vol. 58, No. 1 (Jul., 1953), pp. 55-106.
+\item Samuel Eilenberg and Saunders Mac Lane, "On the Groups H(π, n). II", Annals of Mathematics, Second Series, Vol. 60, No. 1 (Jul., 1954), pp. 49-139.
+\item Saunders Mac Lane, "On the Homology Theory of Eilenberg-Mac Lane", Proceedings of the National Academy of Sciences of the United States of America, Vol. 35, No. 11 (Nov. 15, 1949), pp. 657-663.
+\item Eilenberg, S., & MacLane, S. (1945). Relations Between Homology and Homotopy Groups of Spaces. Proceedings of the National Academy of Sciences of the United States of America, 31(2), 83–87. 
 \end{enumerate}
+
+
 
 \newpage 
 \ \\
@@ -653,7 +898,7 @@ Dean Young is a master's student at New York University, where he studies mathem
 
 \begin{center}
 \begin{tcolorbox}[width=5in,colback={white},title={\begin{center}\texttt{About the Author} \addtocounter{lcounter}{1}  \end{center}},colbacktitle=Yellow,coltitle=black]
-Jiazhen Xia is a graduate student at Zhejiang University, where he studies computer science. \\
+Jiazhen Xia is a master's student at Zhejiang University, where he studies computer science. \\
 \begin{center}
 \includegraphics[width=7.5cm]{about2.jpg}
 \end{center}
