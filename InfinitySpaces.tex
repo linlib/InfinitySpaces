@@ -588,13 +588,37 @@ Unicode & \\
 \hline
 Introduction & \\
 \hline \hline
-\multicolumn{2}{||c||}{\texttt{PART I: } Based connected ∞-groupoids} \\
+\multicolumn{2}{||c||}{\texttt{PART I: } ABELIAN GROUPS AND ∞-SPACES} \\
 \hline \hline
- \multicolumn{2}{||c||}{\texttt{Chapter 1: }The Puppe Sequence for Based Connected ∞-Groupoids} \\
+ \multicolumn{2}{||c||}{\texttt{Chapter 1: }Abelian Groups} \\
 \hline \hline
-The Puppe sequence & \scalebox{0.8}{$\cdots$ ⭢ π₁(E₀) ⭢ π₁(B₀) ⭢ π₀(ω (𝟙 X₀)) ⭢ π₀(E₀) ⭢ π₀(B₀)}  \\
+ &  \\
 \hline \hline
-\multicolumn{2}{||c||}{\texttt{Chapter 2: }The Smash Product in ∞-Grpd₀} \\
+ \multicolumn{2}{||c||}{\texttt{Chapter 2: }Tensor Product of Abelian Groups} \\
+\hline \hline
+ &  \\
+ \hline \hline
+ \multicolumn{2}{||c||}{\texttt{Chapter 3: }Rings and Modules} \\
+\hline \hline
+ &  \\
+ \hline \hline
+ \multicolumn{2}{||c||}{\texttt{Chapter 4: }∞-Spaces} \\
+\hline \hline
+ &  \\
+\hline \hline
+ \multicolumn{2}{||c||}{\texttt{Chapter 5: }Tensor Product of ∞-Spaces} \\
+\hline \hline
+ &  \\
+ \hline \hline
+  \multicolumn{2}{||c||}{\texttt{Chapter 6: }∞-Rings and ∞-Modules} \\
+\hline \hline
+ &  \\
+ \hline \hline
+ \multicolumn{2}{||c||}{\texttt{Chapter 7: }Free ∞-Rings and ∞-Modules} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{PART II: } Based connected ∞-groupoids} \\
 \hline \hline
 \hline \hline
 \end{longtable}
@@ -602,6 +626,36 @@ The Puppe sequence & \scalebox{0.8}{$\cdots$ ⭢ π₁(E₀) ⭢ π₁(B₀) ⭢
 \fi
 
 
+\iffalse
+https://redprl.org/
+agda
+rzk (new!)
+
+Filippo A. E. Nuccio: Hi Dean, thanks for reaching out! I have had a brief look at your pdf and your lean code. Can you give some more details about your project, what you are exactly aiming at (integrating mathlib? writing a book on your own? writing a thesis to showcase your Lean expertise to apply for grad fellowship)? In particular, how can I provide feedback exactly?
+
+Dean Young: Sorry for my late reply Filippo.
+
+My collaborator (Jiazhen Xia) and I have a main goal of making a Mathlib PR. It would be helpful to get tips, points of importance, and suggestions for changes that would make it more likely to be accepted. We've set aside about a year to work through it, and we're taking the time to make as many changes as we need to ensure things like usability.
+
+Separately, if you feel comfortable recommending me on this basis to PhD programs as well, it would improve the strength of my applications by a lot.
+
+Dean Young: The most important kind of feed back is, what are some considerations in making the Whitehead theorem and Puppe sequence things that people would use? We are especially interested in this from the perspective of algebraic geometry.
+
+Filippo A. E. Nuccio: Dear Dean, it is my turn to apologise for a late reply. I have seen your project and it is huge: I think that if you want to reasonably complete in a finite amount of time and to start doing PR's you should really identify a first much smaller goal.
+
+Filippo A. E. Nuccio: I am not an expert in algebraic topology "in the modern sense", I would love to see the Whitehead theorem spelt down in purely topological terms, and this would certainly be a result in its own without the "need" for any application.
+
+Filippo A. E. Nuccio: On the other hand, I see things that are already in mathlib, like pullback and pushouts: are you aware that you won't need to develop them?
+
+Filippo A. E. Nuccio: The take-home message is really: start with a very small PR. Huge ones are hard to check, and if you got something wrong you'd rather discover it sooner than later.
+
+Filippo A. E. Nuccio: If you want to continue the discussion, I would suggest that
+
+You identify this small contribution, even if on the very long run you are aiming at Whitehead/Puppe
+You discuss this small contribution in the public chat
+You strive for it and try to make this first small PR. If it works, you'll make a second one. I was involved in LTE and one of the reasons it will be difficult to make a global PR is that it is too big and many things have diverged from themaster version of mathlib.
+Filippo A. E. Nuccio: Concening your PhD, can I ask more details? Where are you based, where would you like to look for programs, have you a math/CS background, what is your primary scientific interest, how long is your NYU program?
+\fi
 
 \iffalse
 https://mathoverflow.net/questions/464176/bⁿ-and-coherence
@@ -626,7 +680,6 @@ Ideas for future applications:
 \begin{enumerate}
 \item One of the basic things I wanted out of this was homotopy colimit preserving maps (Eⁱⁿᶠ-Alg A)ᵒᵖ ⭢ ∞-Grpd
 \end{enumerate}
-
 
 
 \part{PART I: ABELIAN GROUPS AND ∞-SPACES}
@@ -695,8 +748,6 @@ gives
 \fi
 
 
-
-
 \chapter{Tensor Product of ∞-Spaces}
 
 
@@ -710,6 +761,7 @@ Besides that my ∞-spaces are different, I would like to make my Ainfinity and 
 
 
 make sure to include ∞-Alg...
+
 
 
 
@@ -785,8 +837,18 @@ Mod R ⇄ ∞-Mod R \\
 
 \iffalse
 https://en.wikipedia.org/wiki/Connection_(vector_bundle)
-
 \fi
+
+
+\chapter{Lie Algebras}
+
+
+
+
+\chapter{Lie Algebra Representations}
+
+
+
 
 
 \chapter{Derivations}
@@ -855,6 +917,19 @@ https://en.wikipedia.org/wiki/Connection_form
 \item d2 is wedge with 
 \end{enumerate}
 
+
+
+\chapter{L${}^{\infty}$ Algebras}
+
+
+
+
+\chapter{L${}^{\infty}$ Algebra Representations}
+
+
+
+
+
 \chapter{∞-Derivations}
 
 
@@ -865,7 +940,7 @@ https://en.wikipedia.org/wiki/Connection_form
 
 
 
-\newpage
+
 \newpage
 
 \chapter{Bibliography}
