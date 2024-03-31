@@ -556,12 +556,9 @@ We wish to acknowledge the collaborative efforts of E. Dean Young and Jiazhen Xi
 
 \section{Introduction}
 
-In this document I would like to explore derivations and connections.\\
+In this document I would like to develop a construction of the classifying space functor which can be applied indefinitely. 
 
-\begin{enumerate}
-\item Derivations
-\item Connections
-\end{enumerate}
+explore derivations and connections.
 
 In this section, which makes use of the previous section concerning Haar integral, I intend to cover the ordinary versions of Poincare duality, Pontrjagin duality, and Fourier duality, as well as versions of these theorems using language enabled by the previous repositories. This won't culminate until far into the future, so for now I have jotted down some sketches.\\
 
@@ -572,7 +569,7 @@ I begin by considering the concept of a finite extension, as well as the separab
 
 \section{Contents}
 
-\iffalse
+
 {
 \footnotesize
 \begin{longtable}{|| l || l ||} 
@@ -614,16 +611,57 @@ Introduction & \\
 \hline \hline
  &  \\
  \hline \hline
- \multicolumn{2}{||c||}{\texttt{Chapter 7: }Free ∞-Rings and ∞-Modules} \\
+ \multicolumn{2}{||c||}{\texttt{Chapter 7: }∞-Grpd ⇄ ∞-Space} \\
 \hline \hline
  &  \\
 \hline \hline
-\multicolumn{2}{||c||}{\texttt{PART II: } Based connected ∞-groupoids} \\
+ \multicolumn{2}{||c||}{\texttt{Chapter 8: }Ring ⇄ ∞-Ring} \\
 \hline \hline
+ &  \\
+\hline \hline
+ \multicolumn{2}{||c||}{\texttt{Chapter 9: }Mod R ⇄ ∞-Mod R} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{PART II: } DERIVATIONS AND CONNECTIONS} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 10: }Lie Algebras} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 11: }Lie Algebra Representations} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 12: }Derivations} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 13: }Connections} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 14: }L${}^{\infty}$-Algebras} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 15: }L${}^{\infty}$-Algebra Representations} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 16: }∞-Derivations} \\
+\hline \hline
+ &  \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 17: }∞-Connections} \\
+\hline \hline
+ &  \\
 \hline \hline
 \end{longtable}
 }
-\fi
+
 
 
 \iffalse
@@ -747,6 +785,16 @@ gives
 
 \fi
 
+\iffalse
+- Embedding Ringᵒᵖ              into ∞-presheaves in ∞-spaces
+- Embedding DistributiveLattice into ∞-presheaves in ∞-spaces
+- Embedding Scheme              into ∞-presheaves in ∞-spaces
+\fi
+
+\iffalse
+https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Definition.20of.20group.20scheme.3F
+\fi
+
 
 \chapter{Tensor Product of ∞-Spaces}
 
@@ -764,9 +812,21 @@ make sure to include ∞-Alg...
 
 
 
+\iffalse
+- Embedding Ringᵒᵖ              into ∞-presheaves in ∞-spaces
+- Embedding DistributiveLattice into ∞-presheaves in ∞-spaces
+- Embedding Scheme              into ∞-presheaves in ∞-spaces
+\fi
+
+\iffalse
+https://leanprover.zulipchat.com/#narrow/stream/116395-maths/topic/Ext.20and.20Tor
+\fi
 
 
-\part{PART II: FREE ∞-RINGS AND FREE ∞-MODULES}
+
+
+
+\chapter{∞-Grpd ⇄ ∞-Space}
 
 {
 \footnotesize
@@ -788,13 +848,9 @@ Mod R ⇄ ∞-Mod R \\
 \end{center}
 }
 
-
-\chapter{∞-Grpd ⇄ ∞-Space}
-
-
-
 \begin{enumerate}
 \item πₙ of an ∞-space arising from an ∞-groupoid vs. Hₙ of 
+\item https://leanprover.zulipchat.com/#narrow/stream/116395-maths/topic/homology
 \item 
 \end{enumerate}
 
@@ -820,7 +876,7 @@ Mod R ⇄ ∞-Mod R \\
 
 
 
-\part{PART III: DERIVATIONS AND CONNECTIONS}
+\part{PART II: DERIVATIONS AND CONNECTIONS}
 
 {
 \footnotesize
@@ -838,6 +894,8 @@ Mod R ⇄ ∞-Mod R \\
 \iffalse
 https://en.wikipedia.org/wiki/Connection_(vector_bundle)
 \fi
+
+
 
 
 \chapter{Lie Algebras}
@@ -941,6 +999,9 @@ https://en.wikipedia.org/wiki/Connection_form
 
 
 
+
+
+
 \newpage
 
 \chapter{Bibliography}
@@ -952,6 +1013,9 @@ https://en.wikipedia.org/wiki/Connection_form
 \item Eilenberg, S., & MacLane, S. (1945). Relations Between Homology and Homotopy Groups of Spaces. Proceedings of the National Academy of Sciences of the United States of America, 31(2), 83–87. 
 \end{enumerate}
 
+\iffalse
+https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Derivations.20on.20Lie.20algebras
+\fi
 
 
 \newpage 
