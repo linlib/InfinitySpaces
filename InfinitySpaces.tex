@@ -436,11 +436,10 @@ Here are the packages that I use
 
 %LEAN: 
 \begin{center}
-\begin{tcolorbox}[width=5.8in,colback={white},coltitle=white]
+\begin{tcolorbox}[width=2in,colback={white},coltitle=white]
 \begin{center}
 \ \\
 \scalebox{3}{\texttt{∞-Spaces}}\\
-\ \\
 \end{center}
 \end{tcolorbox}
 \end{center}
@@ -458,15 +457,6 @@ $\texttt{IntGrp}$ & \texttt{D(}∞\texttt{-Grpd₀)} & Σ & Ω & P  & $\texttt{I
  \hline
 \end{tabular}}
 \end{center}}
-\ \\
-%LEAN: 
-\begin{center}
-\begin{tcolorbox}[width=6in,colback={white}]
-\begin{center}
-\ \\
-\end{center}
-\end{tcolorbox}
-\end{center}
 
 %LEAN: 
 \begin{center}
@@ -475,12 +465,6 @@ $\texttt{IntGrp}$ & \texttt{D(}∞\texttt{-Grpd₀)} & Σ & Ω & P  & $\texttt{I
 \end{tcolorbox}
 \end{center}
 
-
-\begin{center}
-\texttt{Plans to prove three variations of the}\\
-\texttt{Whitehead theorem of homotopy groups in}\\
-\texttt{Lean 4, with extensive use of Mathlib 4}
-\end{center}
 
 
 \thispagestyle{empty}
@@ -587,11 +571,11 @@ Introduction & \\
 \hline \hline
  \multicolumn{2}{||c||}{\texttt{Chapter 1: }Abelian Groups} \\
 \hline \hline
- &  \\
+Ab & The category of abelian groups \\
 \hline \hline
  \multicolumn{2}{||c||}{\texttt{Chapter 2: }Tensor Product of Abelian Groups} \\
 \hline \hline
- &  \\
+⊗\_(Ab) &  \\
  \hline \hline
  \multicolumn{2}{||c||}{\texttt{Chapter 3: }Rings and Modules} \\
 \hline \hline
@@ -599,11 +583,11 @@ Introduction & \\
  \hline \hline
  \multicolumn{2}{||c||}{\texttt{Chapter 4: }∞-Spaces} \\
 \hline \hline
- &  \\
+ & \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 5: }Tensor Product of ∞-Spaces} \\
 \hline \hline
- &  \\
+⊗\_(Spc) &  \\
  \hline \hline
   \multicolumn{2}{||c||}{\texttt{Chapter 6: }∞-Rings and ∞-Modules} \\
 \hline \hline
@@ -761,13 +745,13 @@ make sure to include Alg
 
 \chapter{∞-Spaces}
 
-The little squares operad is 
+The little squares operad is the square of the little lines operad:
 
 \begin{center}
 OperadicGroup • OperadicGroup  : ∞-Cat\_(A) ⭢ ∞-Cat\_(A) 
 \end{center}
 
-"Operadic groups in operadic groups" in O²
+For example, ... is operadic groups in operadic groups in O².\\
 
 \begin{center}
 \includegraphics[width=7.5cm,height=5cm]{littlesquaresA.png}
@@ -783,8 +767,6 @@ The commutative nature of composition in the little squares operad is interestin
 OperadicGroup² ∞\_(∞-Grpd)
 \end{center}
 
-
-
 \iffalse
 In the repository concerning classifying spaces, I . 
 
@@ -793,17 +775,10 @@ In the repository
 OperadicCategory² ∞-Cat, OperadicGroupoid² ∞-Grpd, and OperadicGroup² ∞-Grpd
 \fi
 
-OperadicGroup² : 
-
-\begin{enumerate}
-\item 
-\end{enumerate}
-
 Could ∞-spaces be operadic groups in operadic groups?
 
 \iffalse
 B¹.obj (M × N) ⭢ (B¹.obj M) × (B¹.obj N)
-
 \fi
 
 \iffalse
@@ -817,27 +792,18 @@ gives
 - Embedding Ringᵒᵖ              into ∞-presheaves in ∞-spaces
 - Embedding DistributiveLattice into ∞-presheaves in ∞-spaces
 - Embedding Scheme              into ∞-presheaves in ∞-spaces
-\fi
-
-\iffalse
-
 https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Definition.20of.20group.20scheme.3F
-
 \fi
+
 
 
 
 \newpage
-\ \\
-
-
-
-
 \chapter{Tensor Product of ∞-Spaces}
 
 
 
-
+\newpage
 \chapter{∞-Rings and ∞-Modules}
 
 \iffalse
@@ -945,12 +911,12 @@ https://en.wikipedia.org/wiki/Connection_(vector_bundle)
 
 
 
-
-
 \chapter{Derivations}
 
+
+
 \begin{enumerate}
-\item I would like to first construct the lie-algebra of derivations using the spectrum \texttt{Ωⁱⁿᶠ.obj X}. It seems related to coalgebra endomorphisms from \texttt{Ωⁱⁿᶠ.obj X} to itself.\\
+\item I would like to first construct the lie-algebra of derivations using the spectrum \texttt{Ωⁱⁿᶠ.obj X}. It seems related to coalgebra endomorphisms from \texttt{Ωⁱⁿᶠ.obj X} to itself.
 \item Lie algebras and Derₖ(A,A)
 \end{enumerate}
 
