@@ -47,6 +47,8 @@ Here are the packages that I use
 
 %\newunicodechar{π⃗}{$\stackrel{\arr}{\pi}$}
 
+\newunicodechar{₋}{${}_{-}$}
+
 \newunicodechar{×}{$\times$}
 \newunicodechar{→}{$\rightarrow$}
 \newunicodechar{⟨}{$\langle$}
@@ -94,7 +96,7 @@ Here are the packages that I use
 \newunicodechar{⁹}{${}^{\texttt{9}}$}
 \newunicodechar{⁻}{${}^{\texttt{-}}$}
 \newunicodechar{ᵒ}{${}^{\texttt{o}}$}
-\newunicodechar{ᵖ}{${}^{\texttt{ω}}$}
+\newunicodechar{ᵖ}{${}^{\texttt{p}}$}
 \newunicodechar{⁻}{${}^{\texttt{-}}$}
 \newunicodechar{¹}{${}^{\texttt{1}}$}
 \newunicodechar{₀}{${}_{\texttt{0}}$}
@@ -417,25 +419,25 @@ Here are the packages that I use
 
 \AddToShipoutPicture*
   {\put(470,767){
-    \href{https://github.com/linlib/InfinitySpaces/StringDiagramGenerator.py}{\texttt{.py file}}
+    \href{https://www.github.com/linlib/InfinitySpaces/blob/main/StringDiagramGenerator.py}{\texttt{.py file}}
   }}
 
 \AddToShipoutPicture*
   {\put(470,752){
-    \href{https://github.com/linlib/InfinitySpaces/InfinitySpaces.tex}{\texttt{.tex file}}\\
+    \href{https://www.github.com/linlib/InfinitySpaces/blob/main/InfinitySpaces.tex}{\texttt{.tex file}}\\
 
   }}
 
 \AddToShipoutPicture*
   {\put(470,737){
 
-    \href{http://linearlibrary.net/InfinitySpaces/InfinitySpaces.pdf}{\texttt{.pdf file}}\\
+    \href{http://www.github.com/InfinitySpaces/blob/main/InfinitySpaces.pdf}{\texttt{.pdf file}}\\
 
   }}
 
   \AddToShipoutPicture*
   {\put(470,722){
-    \href{https://github.com/linlib/InfinitySpaces/InfinitySpaces.lean}{\texttt{.lean file}}
+    \href{https://www.github.com/linlib/InfinitySpaces/blob/main/InfinitySpaces.lean}{\texttt{.lean file}}
 
   }}
 
@@ -453,6 +455,9 @@ Here are the packages that I use
 \ \\
 \ \\
 \ \\
+\begin{center}
+\includegraphics[scale=0.4]{eckhil.png}
+\end{center}
 
 
 
@@ -482,9 +487,7 @@ Here are the packages that I use
 \ \\
 \ \\
 \thispagestyle{empty}
-\begin{center}
-Copyright\ \textcopyright \ October 19th 2023 Elliot Dean Young and Jiazhen Xia.\ All rights reserved.\\
-\end{center}
+
 \large %%%%%%%% HERE IS THE large LARGE size textsize set text size
 \newpage 
 \ \\
@@ -514,22 +517,46 @@ Copyright\ \textcopyright \ October 19th 2023 Elliot Dean Young and Jiazhen Xia.
 \ \\
 \ \\
 
-We wish to acknowledge the collaborative efforts of E. Dean Young and Jiazhen Xia. Dean Young initially formulated the introduction with twelve goals, posting them on the Lean Zulip in August of 2023. Together the authors are pursuing these plans as a long term project.\\
-
 \newpage
 
 \section{Introduction}
 
-In this document I would like to develop a construction of the classifying space functor which can be applied indefinitely, B¹. I will write Bⁿ for the n-fold composition of B¹. In ```TheWhiteheadTheoremandTwoVariations''', we developed two models of ∞-Grpd\_(A) and ∞-Grpd\_(B). These will produce two models on which B¹ can be defined:
+\noindent\textcolor{Red}{\rule{16cm}{1mm}}
+\begin{center}
+\texttt{Implementation Progress}
+\end{center}
+\noindent\textcolor{Red}{\rule{16cm}{1mm}}
 
-\begin{enumerate}[(i)]
-\item B¹ : OperadicGroup • OperadicGroup ∞-Grpd\_(A) ⭢ OperadicGroup • OperadicGroup ∞-Grpd\_(A)
-\item B¹ : OperadicGroup • OperadicGroup ∞-Grpd\_(B) ⭢ OperadicGroup • OperadicGroup ∞-Grpd\_(B)
-\end{enumerate} 
+\noindent\textcolor{Red}{\rule{16cm}{1mm}}
+\begin{center}
+\texttt{Writing Progress}
+\end{center}
+\noindent\textcolor{Red}{\rule{16cm}{1mm}}
+
+
+\begin{enumerate}
+\item In this text I would like to develop a functorial construction of the classifying space in homotopy which can be applied indefinitely.
+\item This construction is an endofunctor of algebras for operadic groups in operadic groups in ∞-Grpd.
+\item 
+\end{enumerate}
+ I would like to notate it as B¹. 
+
+
+This notation distinguishes 
+
+
+my attempt at an abelian-classifying-space construction which is an endofunctor of grouplike E${}^{\infty}$-spaces, here refered to as ∞-spaces, from the classifying-space construction involving ∞-groupoids and grouplike A${}^{\infty}$-spaces. Note that our ∞-categories always have r = 1, i.e. ∞ is short for (∞,1).\\
+
+I will write Bⁿ for the n-fold composition of B¹, Pow B n. Note that B is not an endofunctor so that it cannot be iterated. It is more typical to divide up the construction B, for instance constructing the Grassmanians Gr${}^{\infty}$(ℂ,n) ≅ B.obj GLₙ(ℂ), from which it follows that [-,Gr${}^{\infty}$(ℂ,n)] is equivalent to the category of GLₙ(ℂ)-principal bundles and therefore to n-dimensional vector bundles bundles.\\
+
+In ```TheWhiteheadTheoremandTwoVariations''', we developed two models of ∞-Grpd\_(A) and ∞-Grpd\_(B). These will produce two models on which B¹ can be defined:
+
+\begin{center}
+B¹ : OperadicGroup • OperadicGroup ∞-Grpd ⭢ OperadicGroup • OperadicGroup ∞-Grpd
+\end{center}
 
 ∞-Spaces ...
 
-explore derivations and connections.
 
 In this section, which makes use of the previous section concerning Haar integral, I intend to cover the ordinary versions of Poincare duality, Pontrjagin duality, and Fourier duality, as well as versions of these theorems using language enabled by the previous repositories. This won't culminate until far into the future, so for now I have jotted down some sketches.\\
 
@@ -538,6 +565,12 @@ https://redprl.org/
 agda
 rzk (new!)
 \fi
+
+\iffalse
+- glueing in with Joel Riou's API
+- convenient widgets
+\fi
+
 
 \iffalse
 https://mathoverflow.net/questions/464176/bⁿ-and-coherence
@@ -561,11 +594,22 @@ Ideas for future applications:
 \item One of the basic things I wanted out of this was homotopy colimit preserving maps (Eⁱⁿᶠ-Alg A)ᵒᵖ ⭢ ∞-Grpd
 \end{enumerate}
 
+Note that this repository does not implement $\texttt{Q X := colimitₙ Ωⁿ Σⁿ X}$ or the stable homotopy groups. It concerns the relationship between O and B and not Ω and Σ.\\
 
+\iffalse
+A famous paper of ... demonstrates the inconsistency of five conditions related to Ωⁱⁿᶠ : ∞-Grpd₋₁ ⇄ Spectra : Σⁱⁿᶠ. This problem is here solved by adding in the intermediate category of ∞-spaces:
+
+∞-Grpd₋₁ ⇄ ∞-Space ⇄ Spectra
+
+Meanwhile the tensor product of chain complexes is 
+
+The first of these adjunctions is the free abelian group construction whose counit is associated to a version of the Dold-Thom theorem.\\
+
+The second of these adjunctions is the `true` infinite delooping and infinite looping, featuring an analogue of all five theorems. Given the intermediate construction of infinite loop spaces, it is possible to form Spectra as a higher inverse limit of ∞-Space in which Σ is invertible. The loop space in ∞-spaces is constructed so that 
+\fi
 
 \section{Contents}
 
-The contents below reflect most or all of the contents of each chapter, each of which is adds a fairly minimal .
 
 {
 \footnotesize
@@ -586,35 +630,89 @@ Introduction & \\
 \hline \hline
  \multicolumn{2}{||c||}{\texttt{Chapter 1: }Abelian Groups} \\
 \hline \hline
-abelian\_group & The type of abelian groups \\
+abeliangroup & The type of abelian groups \\
 \hline
-AbelianGroup & The category of abelian groups \\
+Maps of abelian groups & Constructing homomorphisms of abelian groups \\
+\hline
+Negation & \\
+\hline
+The Eckman-Hilton Argument & \\
+\hline
+AbelianGroup ⭢ Group & The forgetful functor from abelian groups to groups \\
+\hline
+Eilenberg-Maclane Spaces & \\
+\hline
+Chain Complexes & \\
+\hline
+Realization of Chain Complexes & \\
+\hline
+Tensor Product of Chain Complexes & \\
 \hline \hline
  \multicolumn{2}{||c||}{\texttt{Chapter 2: }∞-Spaces} \\
 \hline \hline
-∞-space & ∞-spaces are... \\
- \hline
-∞-Space & the category of ∞-spaces ... \\
+∞-space & The type of ∞-spaces \\
+\hline
+Maps of ∞-spaces & Constructing maps of ∞-spaces \\
+\hline
+Negation & \\
+\hline
+The Eckman-Hilton Argument & \\
+\hline
+OperadicGroup OperadicGroup ∞-Grpd₋₁ ⭢ OperadicGroup ∞-Grpd₋₁ & \\
+\hline
+B¹ and Bⁿ & \\
+\hline
+Chn : ??? & \\
+\hline
+Realization of Chain Complexes & \\
+\hline
+Tensor Product of Chain Complexes & \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 3: }Tensor Product of Abelian Groups} \\
 \hline \hline
 - ⊗\_(AbelianGroups) - & Mathlib's tensor product of abelian groups \\
 \hline
 [-,-]\_(AbelianGroups) & Mathlib's hom of abelian groups\\
+\hline
+AbelianGroup & The symmetric monoidal category of abelian groups\\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 4: }Tensor Product of ∞-Spaces} \\
 \hline \hline
 - ⊗\_(∞-Space) - &  \\
 \hline
 [-,-]\_(∞-Space) &  \\
+\hline
+∞-Space & The symmetric monoidal category of ∞-spaces \\
 \hline \hline
-\multicolumn{2}{||c||}{\texttt{Chapter 5: }Rings and Commutative Rings} \\
+ \multicolumn{2}{||c||}{\texttt{Chapter 5: }Set₋₁ ⇄ AbelianGroups} \\
+\hline \hline
+??? & The free abelian group functor \\
+ \hline
+??? & The forgetful functor from abelian groups to pointed sets \\
+ \hline
+??? : Set₋₁ ⇄ AbelianGroup : ??? & The adjunction between pointed sets and abelian groups \\
+\hline \hline
+ \multicolumn{2}{||c||}{\texttt{Chapter 6: }∞-Grpd₋₁ ⇄ ∞-Space} \\
+\hline \hline
+??? & The free ∞-space given a based ∞-groupoid \\
+\hline
+??? & The forgetul functor from ∞-spaces to ∞-groupoids \\
+\hline
+??? : ∞-Grpd₋₁ ⇄ ∞-Space : ??? & The ??? between ∞-Grpd₋₁ and ∞-Spaces \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{PART II: } RINGS, COMMUTATIVE RINGS, A${}^{\infty}$-RINGS, AND E${}^{\infty}$-RINGS} \\
+\hline \hline
+\multicolumn{2}{||c||}{\texttt{Chapter 7: }Rings and Commutative Rings} \\
 \hline \hline
 ring & The type of rings \\
  \hline
 Ring & The category of rings \\
+\hline
+commutative\_ring & The type of commutative rings  \\
+\hline
+CommutativeRing & The category of commutative rings \\
  \hline \hline
-  \multicolumn{2}{||c||}{\texttt{Chapter 6: }A${}^{\infty}$-Rings and E${}^{\infty}$-Rings} \\
+  \multicolumn{2}{||c||}{\texttt{Chapter 8: }A${}^{\infty}$-Rings and E${}^{\infty}$-Rings} \\
 \hline \hline
 A${}^{\infty}$-ring & The type of A${}^{\infty}$-rings \\
 \hline
@@ -624,62 +722,81 @@ E${}^{\infty}$-ring  & The type of E${}^{\infty}$-rings \\
  \hline
 E${}^{\infty}$-Ring  & The category of E${}^{\infty}$-Rings \\
  \hline \hline
-\multicolumn{2}{||c||}{\texttt{Chapter 7: }Modules and Modules over Commutative Rings} \\
+\multicolumn{2}{||c||}{\texttt{Chapter 9: }Modules and Modules over Commutative Rings} \\
 \hline \hline
  &  \\
  \hline
  &  \\
- \hline \hline
-\multicolumn{2}{||c||}{\texttt{Chapter 8: }A${}^{\infty}$-Modules and E${}^{\infty}$-Modules} \\
-\hline \hline
-A∞-Mod &  \\
+ \hline
+InternalMonoidAction (InternalMonoid C) ≅ InternalMonoid (InteralMonoidAction C) & The ??? theorem \\ 
 \hline
-A∞-Mod &  \\
- \hline \hline
- \multicolumn{2}{||c||}{\texttt{Chapter 9: }Set ⇄ Ab} \\
-\hline \hline
-Sॱ & The free abelian group functor \\
- \hline
-S𛲔 & The forgetful functor from abelian groups to sets \\
- \hline
- &  \\
-\hline \hline
- \multicolumn{2}{||c||}{\texttt{Chapter 10: }∞-Grpd ⇄ ∞-Space} \\
-\hline \hline
- & The free ∞-space given an ∞-groupoid \\
+CommutativeAlgebra : CommutativeRing → Cat & The category of commutative algebras \\
 \hline
- & The underlying ∞-groupoid of an ∞-space \\
+Maps (Algebra A) : Cat & The category of maps of commutative A-algebras \\
 \hline \hline
-\multicolumn{2}{||c||}{\texttt{PART II: } DERIVATIONS AND CONNECTIONS} \\
+\multicolumn{2}{||c||}{\texttt{Chapter 10: }A${}^{\infty}$-Modules and E${}^{\infty}$-Modules} \\
+\hline \hline
+ &  \\
+\hline
+ &  \\
+\hline
+$A{}^{\infty}$-RingAction ($A{}^{\infty}$-Ring C) ≅ $A{}^{\infty}$-Ring ($A{}^{\infty}$-RingAction C) & The ??? theorem \\ 
+\hline
+Maps A${}^{\infty}$-Algebras & \\
+ \hline \hline
+\multicolumn{2}{||c||}{\texttt{PART III: } DERIVATIONS AND CONNECTIONS} \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 11: }Lie Algebras} \\
 \hline \hline
- &  \\
+lie\_algebra & The type of Lie-algebras \\
+\hline
+LieAlgebra & The category of Lie-algebras \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 12: }Derivations} \\
 \hline \hline
+InternalAbelianGroup (Maps (Algebra A)) ≅ MonoidActionObject A & ??? \\
+\hline
+??? : (Maps (Algebra A)) ⇄ InternalAbelianGroup (Maps (Algebra A)) : ??? & The free abelian group functor for (Maps (Algebra A)) \\
+\hline
+Λ : ??? ⇄ ??? : FstDeg & \\ 
+\hline
+??? : (Algebra A) ⇄ Chn (Algebra A) : ??? & The free DGA functor \\
+\hline 
 derivation & Definition of a derivation \\
 \hline
+Der : () ⇄ (InternalMonoidAction A) : ??? & A derivation is a primitive element \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 13: }L${}^{\infty}$ Algebras} \\
 \hline \hline
- &  \\
+Lⁱⁿᶠ\_algebra & The type of L${}^{\infty}$-algebras  \\
+\hline
+L${}^{\infty}$Algebra &  \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 14: }∞-Derivations} \\
 \hline \hline
-∞-derivation & Definition of ??? \\
+OperadicAbelianGroup (Maps (∞-Algebra A)) ≅ E${}^{\infty}$-MonoidAction A & ??? \\
+\hline
+??? : $A{}^{\infty}$-Algebras ⇄ ???  & The free abelian group \\
+\hline
+Λ : ??? ⇄ ??? : FstDeg &  \\ 
+\hline
+??? : (???) ⇄ (???) : ??? & The free ??? \\
+\hline
+∞-derivation & Definition of an ∞-derivation \\
+\hline
+∞-Der : () ⇄ () : ??? & A derivation is an ∞-primitive element \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 15: }Tensor Product of Lie Algebras} \\
 \hline \hline
-- ⊗\_(∞-Space) - &  \\
+- ⊗\_() - &  \\
 \hline
-[-,-]\_(∞-Space) &  \\
+LieAlgebra : ??? & The monoidal category of Lie algebras\\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 16: }Tensor Product of L${}^{\infty}$-Algebras} \\
 \hline \hline
-ring & The type of rings \\ 
+- ⊗\_() - & \\ 
  \hline
-Ring & The category of rings \\
+ : ??? & The symmetric monoidal category of L${}^{\infty}$-algebras \\
  \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 17: }Lie Algebra Representations} \\
 \hline \hline
@@ -689,9 +806,17 @@ Ring & The category of rings \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 18: }Connections} \\
 \hline \hline
- & \\
+??? & The ??? equivalence \\
 \hline
- & \\
+??? & The free internal abelian group action functor \\
+\hline
+??? & The first degree of the free E${}^{\infty}$-DGM on an algebra is s\_() \\
+\hline
+???   & ??? \\
+\hline
+connection & Definition of a connection \\
+\hline
+??? & A connection is a d-action \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 19: }L${}^{\infty}$-Representations} \\
 \hline \hline
@@ -701,29 +826,43 @@ Ring & The category of rings \\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 20: }∞-Connections} \\
 \hline \hline
- & \\
+??? & The ??? equivalence \\
 \hline
- & \\
+??? & The free operadic abelian group action functor \\
+\hline
+??? & The first degree of the free E${}^{\infty}$-DGM on an algebra is sⁱⁿᶠ\_() \\
+\hline
+???  & ??? \\
+\hline
+connection & Definition of a connection \\
+\hline
+??? & A connection is a dⁱⁿᶠ-action\\
 \hline \hline
 \multicolumn{2}{||c||}{\texttt{Chapter 21: }Tensor Product of Lie-Algebra Representations} \\
 \hline \hline
-- ⊗\_(∞-Space) - &  \\
+- ⊗\_() - &  \\
 \hline
-[-,-]\_(∞-Space) &  \\
+[-,-]\_() &  \\
+\hline
+??? & The symmetric monoidal closed category of Lie-algebra representations \\
 \hline \hline
-\multicolumn{2}{||c||}{\texttt{Chapter 22: }Tensor Product of L${}^{\infty}$-Representations} \\
+\multicolumn{2}{||c||}{\texttt{Chapter 22: }Tensor Product of L${}^{\infty}$-Algebra Representations} \\
 \hline \hline
-ring & The type of rings \\
+- ⊗\_() -  &  \\
  \hline
-Ring & The category of rings \\
+[-,-]\_() - &  \\
+ \hline
+??? & The symmetric monoidal closed category of L${}^{\infty}$-algebra representations\\
  \hline \hline
 \end{longtable}
 }
 
 
 
+\part{ABELIAN GROUPS AND ∞-SPACES}
 
-\part{PART I: ABELIAN GROUPS AND ∞-SPACES}
+In this first section I will construct eight structures for monoidal categories. These structures will be constructed so as to be endofunctions of a particular kind of monoidal category (as opposed to a cartesian category).\\
+
 
 {
 \footnotesize
@@ -736,17 +875,39 @@ Ring & The category of rings \\
  \hline
  \texttt{Unitial} &  \texttt{Actional}  &  \texttt{Unitial} &  \texttt{Actional}\\
  \hline \hline
- \texttt{InternalMonoid}  & \texttt{InternalMonoidAction} & \texttt{A}${}^{\infty}$ & \texttt{OperadicMonoidAction} \\ 
+ \texttt{InternalCommutativeMonoid} & \texttt{InternalCommutativeMonoidAction} & \texttt{OperadicCommutativeMonoid} & \texttt{OperadicCommutativeMonoidAction} \\
  \hline
- \texttt{InternalCommutative Monoid} & \texttt{InternalCommutativeMonoidAction} & \texttt{OperadicMonoid} & \texttt{OperadicMonoidAction} \\
+ \texttt{InternalAbelianGroup} & \texttt{InternalAbelianGroupAction} & \texttt{OperadicAbelianGroup} & \texttt{OperadicAbelianGroupAction} \\
  \hline
 \end{tabular}
 \end{center}
 }
 
+One particular kind of monoidal category is a $\textit{cartesian category}$, i.e. a monoidal category in which the monoidal operation is cartesian product. Fox's theorem says that a symmetric monoidal category is cartesian if and only if it is isomorphic to cocommutative comonoids in itself. 
+
+\iffalse
+The repository concerning category at the linlib github will eventually feature a proof of this theorem..
+\fi
+
+We will also be interested to form the tensor product of abelian groups and the tensor product of ∞-spaces.
+
+\iffalse
+I will also construct internal abelian groups and a strcture I call `operadic abelian groups'.\\ 
+
+One interesting object we will be able to construct is the tangent bundle on the unit ball in l₂(ℝ) and l₂(ℂ). 
+
+Smooth functions on the unit ball in l₂ ...\\
+\fi
+
+
+
 
 \newpage
 \chapter{Abelian Groups}
+
+\section{The Category of Commutative Monoids and the Category of Abelian Groups}
+
+\section{AbelianGroup ⭢ Group}
 
 In this chapter I cover the type of abelian groups as well as the category of abelian groups.\\
 
@@ -754,51 +915,161 @@ In this chapter I cover the type of abelian groups as well as the category of ab
 \item Mathlib.Algebra.Group.Defs
 \end{enumerate}
 
+\iffalse
+, CommutativeMonoid ⭢ Monoid
+\fi
+
+
+\section{Negation}
+
+
+
+
+\section{The Eckman-Hilton Argument} 
+
+The \href{https://ncatlab.org/nlab/show/Eckmann-Hilton+argument}{Eckman-Hilton Argument} demonstrates that internal groups in the monoidal category of groups with product as monoidal operation is equivalent to the category of abelian groups.\\
+
+
+
+\section{Eilenberg-Maclane Spaces}
+
+\begin{definition}
+Let $\texttt{A}$ be an abelian group, and let $n \in \mathbb{N}$ be a non-negative integer. An Eilenberg-Maclane space .
+\end{definition}
+
+
+\section{Chain Complexes}
+
+\begin{definition}
+...
+\end{definition}
+
+
+\section{Realization of Chain Complexes}
+
+\begin{definition}
+...
+\end{definition}
+
+
+\section{Tensor Product of Chain Complexes}
+
+\begin{definition}
+...
+\end{definition}
+
+\iffalse
+make sure to include commutative monoids
+\fi
 
 
 \newpage
 \chapter{∞-Spaces}
 
-∞-spaces have a negation:
+\iffalse
+Some choices of models for ∞-spaces are:
+\begin{enumerate}
+\item Algebras for the little discs operad
+\item Algebras for the little squares operad in ∞-Cat
+\item Algebras for the little lines operad in algebras for the little lines operad in ∞-Grpd
+\item Algebras for the piecewise-linear-amortizations operad in algebras for the piecewise-linear-amortizations operad
+\item Algebras for the 
+\end{enumerate}
+\fi
+
+\section{The category of ∞-Spaces and the category of E${}^{\infty}$-Spaces}
+
+\begin{center}
+\includegraphics[scale=1]{littlesquaresA.png}
+\end{center}
+
+\begin{center}
+\includegraphics[scale=1]{littlesquaresB.png}
+\end{center}
 
 
+\section{∞-Spaces ⭢ OperadicGroup • OperadicGroup ∞-Grpd₋₁}
 
-For example, ... is operadic groups in operadic groups in O².\\
+An ∞-space is an algebra for the little-squares operad.\\
+
+The little-squares operad is OperadicGroup 2 ∞-Grpd.\\
+
+, which we have here taken to mean an operadic group in operadic groups in based connected ∞-groupoids, is a particular operadic group. In this approach, we have considered OperadicGroup to have type ℕ ⭢ Cat rather than ∞-Cat ⭢ ∞-Cat or ∞\_(∞-Cat) ⭢ ∞\_(∞-Cat). Specifically, we can supply a non-negative integer to obtain a particular operad resembling little n-cubes but which features no "empty space".\\
+
+\iffalse
+, ∞⃗-Spaces ⭢ OperadicMonoid • OperadicMonoid ∞-Cat₋₁
+\fi
+
+
+\section{Negation}
+
+For an ∞-space A, negation ¬ : A ⭢ A ...\\
+
+∞-spaces
+
+
+\section{The Eckman-Hilton Argument} 
+
+\begin{center}
+\includegraphics[scale=1]{eckmanhilton1.png}
+\end{center}
+
+\begin{center}
+\includegraphics[scale=1]{eckmanhilton2.png}
+\end{center}
+
+\begin{center}
+\includegraphics[scale=1]{r1.png}
+\end{center}
+
+\begin{center}
+\includegraphics[scale=1]{r2.png}
+\end{center}
+
+\begin{center}
+\includegraphics[scale=1]{r3.png}
+\end{center}
+
+\begin{center}
+\includegraphics[scale=1]{r4.png}
+\end{center}
+
 
 
 \begin{center}
-OperadicGroup² ∞\_(∞-Grpd)
+OperadicGroup 2 ∞-Grpd₋₁
+\end{center}
+
+\begin{center}
+
 \end{center}
 
 \iffalse
-In the repository concerning classifying spaces, I . 
-
-In the repository
-
-OperadicCategory² ∞-Cat, OperadicGroupoid² ∞-Grpd, and OperadicGroup² ∞-Grpd
-\fi
-
-Could ∞-spaces be operadic groups in operadic groups?
-
-\iffalse
 B¹.obj (M × N) ⭢ (B¹.obj M) × (B¹.obj N)
 \fi
 
-\iffalse
-B¹.obj (M × N) ⭢ (B¹.obj M) × (B¹.obj N)
-gives
+\section{B¹ and Bⁿ}
 
-\fi
+\begin{definition}
+B¹ 
+\end{definition}
 
-\iffalse
-- Embedding Ringᵒᵖ              into ∞-presheaves in ∞-spaces
-- Embedding DistributiveLattice into ∞-presheaves in ∞-spaces
-- Embedding Scheme              into ∞-presheaves in ∞-spaces
-https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Definition.20of.20group.20scheme.3F
-\fi
+\begin{definition}
+Bⁿ is B¹ • Bⁿ⁻¹.
+\end{definition}
 
 
-Abelian groups are internal groups in internal groups.
+\section{Chain Complexes}
+
+
+
+
+\section{Realization of Chain Complexes}
+
+
+
+
+\section{Tensor Product of Chain Complexes}
 
 
 
@@ -811,21 +1082,156 @@ Abelian groups are internal groups in internal groups.
 
 
 \newpage
-\chapter{Smash Product of ∞-Spaces}
+\chapter{Tensor Product of ∞-Spaces}
 
 \iffalse
 ∧\_(∞-Spc)
+\fi
+
+∞-Grpd₋₁ with smash product forms an operadic commutative monoid, but not a monoidal category.\\
+
+
+\newpage
+\chapter{Set₋₁ ⇄ AbelianGroup}
+
+
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{||l | l ||} 
+ \hline
+ Construction & Description \\
+ \hline
+??? : InternalAbelianGroup Set₋₁ ≅ AbelianGroup : ???  & The ??? theorem \\
+\hline
+??? : Set₋₁ ⇄ AbelianGroup : ??? & The ??? adjunction \\
+ \hline
+\end{tabular}
+\end{center}
+}
+
+Abelian groups are internal groups in internal groups in sets.\\
+
+
+In forming the free group on a set, based sets intermediate the construction.\\
+
+
+
+\newpage
+\chapter{∞-Grpd₋₁ ⇄ ∞-Space}
+
+In this section, we construct a 
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{||l | l ||} 
+ \hline
+ Construction & Description \\
+ \hline
+ ??? : InternalAbelianGroup Set₋₁ ≅ AbelianGroup : ???  & The ??? theorem \\
+\hline
+ ??? : ∞-Grpd₋₁ ⇄ ∞-Space : ??? & The ??? adjunction \\
+ \hline
+\end{tabular}
+\end{center}
+}
+
+
+\begin{enumerate}
+\item πₙ of an ∞-space arising from an ∞-groupoid
+\item Hₙ of an 
+\item Dold-Thom theorem
+\item \iffalse https://leanprover.zulipchat.com/#narrow/stream/116395-maths/topic/homology \fi
+\item B is iterable on this
+\item Chn ... 
+\item μ : Chn × Chn ⭢ Chn
+\end{enumerate}
+
+
+S\_(???) in general...
+
+
+\iffalse
+In forming the free ∞-space on an ∞-groupoid, based ∞-groupoids intermediate the construction.
+\fi
+
+
+\part{RINGS, COMMUTATIVE RINGS, A${}^{\infty}$-RINGS, AND E${}^{\infty}$-RINGS}
+
+In this second section, I consider four constructions for monoidal categories which have occured less generally elsewhere for cartesian categories: internal monoids, internal commutative monoids, algebras for $A{}^{\infty}$-operads, and algebras for $E{}^{\infty}$-operads. The main difference with the structures featured previously is that these structures concern an operation which is more general than product, but less general than pullback. Four of the sixteen structures formed in the repository concerning the Whitehead theorem can re-create the rest, are not instances of the structures here. Meanwhile, the four structures defined here will be constructed using Mathlib 4's monoidal categories and symmetric monoidal categories. Tensor product of abelian groups and smash product of ∞-spaces, coincide with the previous structures in the case where the monoidal operation is product (see Fox's theorem).\\
+
+To reflect the use of monoidal categories as opposed to categories (in which the cartesian monoidal structure can be recovered from the structure as a seven entry with the addition of a single Lean universe), I use different names for the constructions:
+
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{||l || l || l || l ||} 
+ \hline
+  \multicolumn{4}{||c||}{\texttt{Categories of Internal Objects}} \\
+ \hline
+ \multicolumn{2}{||c||}{\texttt{Strict}}  &  \multicolumn{2}{||c||}{\texttt{Lax}} \\
+ \hline \hline
+ \texttt{Unitial} &  \texttt{Actional}  &  \texttt{Unitial} &  \texttt{Actional}\\
+ \hline 
+ \texttt{MonoidObjects : ??? → ???}  & \texttt{MonoidActionObjects : ??? → ???} & A${}^{\infty}$-Monoid ∞-Space & A${}^{\infty}$-MonoidAction ∞-Space \\ 
+ \hline
+ \texttt{CommutativeMonoidObjects : ??? → ??? } & \texttt{CommutativeMonoidActionObjects : ??? → ???} & E${}^{\infty}$-Monoid ∞-Space & E${}^{\infty}$-MonoidAction ∞-Space \\
+ \hline
+\end{tabular}
+\end{center}
+}
+
+\iffalse
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{||l || l || l || l ||} 
+ \hline
+  \multicolumn{4}{||c||}{\texttt{Eckman-Hilton ???}} \\
+ \hline
+ \multicolumn{2}{||c||}{\texttt{Strict}}  &  \multicolumn{2}{||c||}{\texttt{Lax}} \\
+ \hline
+ \texttt{Unitial} &  \texttt{Actional}  &  \texttt{Unitial} &  \texttt{Actional}\\
+ \hline \hline
+ \texttt{MonoidObjects AbelianGroup}  & \texttt{MonoidActionObjects AbelianGroup} & \texttt{A${}^{\infty}$-Monoid ∞-Space} & \texttt{A${}^{\infty}$-MonoidAction ∞-Space} \\ 
+ \hline
+  \texttt{MonoidObjects (Chn AbelianGroup)}  & \texttt{{MonoidActionObjects (Chn AbelianGroup)} & \texttt{A${}^{\infty}$-Monoid (∞-Chn ∞-Space)} & \texttt{A${}^{\infty}$-MonoidAction (∞-Chn ∞-Space)} \\ 
+ \hline
+ \hline
+ \texttt{CommutativeMonoidObjects} & \texttt{CommutativeMonoidActionObjects} & \texttt{OperadicCommutativeMonoid} & \texttt{OperadicCommutativeMonoidAction} \\
+ \hline
+  \texttt{CommutativeMonoidObjects Chn AbelianGroup}  & \texttt{InternalCommutativeMonoidAction (Chn AbelianGroup)} & \texttt{OperadicCommutativeMonoid (∞-Chn ∞-Space)} & \texttt{OperadicMonoidAction (∞-Chn ∞-Space)} \\
+ \hline
+\end{tabular}
+\end{center}
+}
 \fi
 
 
 \newpage
 \chapter{Rings and Commutative Rings}
 
+Rings and DGAs
 
+Commutative rings and CDGAs
+
+\begin{enumerate}
+\item \href{https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Category.20of.20Commutative.20Algebras}{A thread on} creating the six-entry category of commutative algebras.
+\item In this section we use slightly different internal structures than the internal monoid in the last section; these internal monoids are defined in a monoidal category and the others are defined for product only. As such we may like to re-examine those structures, or alternatively to keep separate definitions.
+\item What's more clear is that the ∞-analogous are more difficult to reconcile with the choices made for the first sixteen structures and the four doubled structures (see the section on the Eckman-Hilton argument)
+\end{enumerate}
 
 
 \newpage
 \chapter{A${}^{\infty}$-Rings and E${}^{\infty}$-Rings}
+
+\iffalse
+A${}^{\infty}$-Rings and DG A${}^{\infty}$-Rings
+E${}^{\infty}$-Rings and DG E${}^{\infty}$-Rings
+
+Commutative rings and CDGAs
+\fi
+
 
 make sure to include Alg
 
@@ -851,6 +1257,10 @@ https://leanprover.zulipchat.com/#narrow/stream/116395-maths/topic/CDGAs
 https://leanprover.zulipchat.com/#narrow/stream/116395-maths/topic/Tensor.20products.20of.20graded.20objects.20.2F.20chain.20complexes
 \fi
 
+\begin{enumerate}
+\item What's more clear is that the ∞-analogous are more difficult to reconcile with the choices made for the first sixteen structures and the four doubled structures (see the section on the Eckman-Hilton argument).
+\end{enumerate}
+
 
 \newpage
 \chapter{Modules over Rings and Commutative Rings}
@@ -864,74 +1274,91 @@ https://leanprover.zulipchat.com/#narrow/stream/116395-maths/topic/Tensor.20prod
 
 
 
-\newpage
-\chapter{Set₋₁ ⇄ AbelianGroup}
+
+\part{DERIVATIONS AND CONNECTIONS}
+
+In this section, I define four more structures:
 
 {
 \footnotesize
 \begin{center}
-\begin{tabular}{||l ||} 
+\begin{tabular}{||l || l || l ||} 
  \hline
-Set ⇄ AbelianGroup \\
+ & \multicolumn{2}{||c||}{\texttt{Four Definitions}} \\
+ \hline
+ & \texttt{Strict} & \texttt{Lax} \\
+ \hline
+ \texttt{Unitial}  & Derivation & ∞-Derivation \\
+ \hline
+ \texttt{Actional} & Connection & ∞-Connection \\
  \hline
 \end{tabular}
 \end{center}
 }
 
-Abelian groups are internal groups in internal groups in sets.\\
-
-
-
-\newpage
-\chapter{∞-Grpd₋₁ ⇄ OperadicGroup²}
-
+I also construct four adjunctions which feature the internal abelian group structure:
 
 {
 \footnotesize
 \begin{center}
-\begin{tabular}{|| l ||} 
+\begin{tabular}{||l || l || l ||} 
  \hline
-∞-Grpd₋₁ ⇄ OperadicGroup² \\
+ & \multicolumn{2}{||c||}{\texttt{Four Free Constructions in Algebra}} \\
+ \hline
+ \hline
+  & \texttt{Strict} & \texttt{Lax}   \\
+ \hline
+ \texttt{Unitial}  & ??? : Map ??? ⇄ InternalAbelianGroup (Map ???) : ??? & ??? : Map ??? ⇄ (OperadicAbelianGroup (Map ???)) : ???  \\
+ \hline
+ \texttt{Actional} & ??? : ??? ⇄ InternalAbelianGroupAction ??? : ??? & ??? : ??? ⇄ OperadicAbelianGroupAction ??? : ??? \\
  \hline
 \end{tabular}
 \end{center}
 }
 
-\begin{enumerate}
-\item πₙ of an ∞-space arising from an ∞-groupoid
-\item Hₙ of an 
-\item Dold-Thom theorem
-\item \iffalse https://leanprover.zulipchat.com/#narrow/stream/116395-maths/topic/homology \fi
-\item B is iterable on this
-\item Chn ... 
-\item μ : Chn × Chn ⭢ Chn
-\end{enumerate}
+In this second part, I define eight adjunctions associated to the algebraic structures defined in the last section.\\
 
-
-
-
-
-\part{PART II: DERIVATIONS AND CONNECTIONS}
 
 
 \newpage
 \chapter{Lie Algebras}
 
+\begin{definition}[Lie Algebra] Let $A$ be a (commutative unitial) ring. A Lie-algebra is an $A$-module $M$ such that...
+\end{definition}
 
+\begin{definition}[Lie Algebra Map] Let $A$ be a (commutative unitial) ring.
+\end{definition}
+
+\begin{enumerate}
+\item \href{https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/The.20classification.20of.20Lie.20algebras}{A thread on the classification of Lie algebras}.
+\end{enumerate}
 
 
 \newpage
 \chapter{Derivations}
 
+In a blog post \href{https://amathew.wordpress.com/2011/05/14/the-cotangent-complex-i-group-objects-in-categories-of-algebras/}{here},
+
+
+
 Let $\texttt{A}$ be a ring and suppose that $\texttt{B : Alg A}$. $\texttt{B.dom}$.\\
 
 \begin{center}
-(Alg A)⁄B ⇄ Mod B
+S\_(Mon (Act R))𛲔 : (ComMon R) ⇄ ??? : S\_(Mon (Act R))ॱ
 \end{center}
 
-\iffalse
-https://amathew.wordpress.com/2011/05/14/the-cotangent-complex-i-group-objects-in-categories-of-algebras/
-\fi
+\begin{theorem}the category of internal abelian groups in Mon (Act R) is equivalent to Act R
+\end{theorem}
+
+\begin{center}
+S\_(Mon (Ch (Act R)))𛲔 : Mon (Ch (Act R)) ⇄ Mod R : S\_(Mon (Ch (Act R)))ॱ
+\end{center}
+
+
+\begin{center}
+(Alg A)⁄A ⇄ (Alg A)
+\end{center}
+
 
 \begin{enumerate}
 \item I would like to first construct the lie-algebra of derivations using the spectrum \texttt{Ωⁱⁿᶠ.obj X}. It seems related to coalgebra endomorphisms from \texttt{Ωⁱⁿᶠ.obj X} to itself.
@@ -949,35 +1376,41 @@ https://amathew.wordpress.com/2011/05/14/the-cotangent-complex-i-group-objects-i
 \chapter{∞-Derivations}
 
 \begin{center}
-Ω : (E${}^{\infty}$-Alg A)⁄B ⇄ E${}^{\infty}$-Mod B : Λ
+Ω\_()𛲔 : (Eⁱⁿᶠ-Alg A)/A ⇄ Eⁱⁿᶠ-Mod A : Ω\_()ॱ
 \end{center}
 
 \begin{center}
-Ω : (A${}^{\infty}$-Alg A)⁄B ⇄ A${}^{\infty}$-Mod B : Λ
+Λ\_()𛲔 : Ch (Eⁱⁿᶠ-Alg A) ⇄ Eⁱⁿᶠ-Mod A : Λ\_()ॱ
 \end{center}
 
 
 
+In this section, I construct: 
 
-\iffalse
-Λ*... use a subscript with round braces for the strict and lax variations
-Ω as well
-λ for actional
-ω for actional
-\fi
+\begin{center}
+Ωⁱⁿᶠ\_(A) : (E${}^{\infty}$-Alg A)⁄A ⇄ E${}^{\infty}$-Mod A : Λⁱⁿᶠॱ\_(A)
+\end{center}
 
-\iffalse
-Λ*... use a subscript with round braces for the strict and lax variations
-Ω as well
-λ for actional
-ω for actional
-\fi
+And I also define the concept of an ∞-derivation.\\
+
+This adjunction factors like so:
+
+\begin{center}
+Ωⁱⁿᶠ\_(A) : (E${}^{\infty}$-Alg A)⁄A ⇄ ??? ⇄ E${}^{\infty}$-Mod A : Λⁱⁿᶠॱ\_(A)
+\end{center}
+
 
 The more typical concept of a free abelian group .\\
 
 
 Given an $E^{\infty}$-algebra...., we can form an \\
+\iffalse
+https://golem.ph.utexas.edu/category/2011/05/an_operadic_introduction_to_en.html
+\fi
 
+\iffalse
+https://arxiv.org/pdf/1106.1791.pdf
+\fi
 
 
 \newpage
@@ -995,13 +1428,45 @@ Given an $E^{\infty}$-algebra...., we can form an \\
 \newpage
 \chapter{Connections}
 
+s instead of ω and λ
+
+\iffalse
+\begin{center}
+ω\_()𛲔 : (Eⁱⁿᶠ-Mod A) ⇄ Eⁱⁿᶠ-Mod A : ω\_()ॱ
+\end{center}
+
+\begin{center}
+λ\_()𛲔 : Ch (Eⁱⁿᶠ-Mod A) ⇄ Eⁱⁿᶠ-Mod A : λ\_()ॱ
+\end{center}
+\fi
+
+The set of connections forms an affine space. One can then define:
+
+\iffalse
+\begin{enumerate}
+... ⭢ Ω¹(...)
+\end{enumerate}
+\fi
+
+
+
+\begin{enumerate}
+\item Free abelian group action.
+\end{enumerate}
+
 \iffalse
 https://amathew.wordpress.com/2011/05/14/the-cotangent-complex-i-group-objects-in-categories-of-algebras/
+\fi
+
+\iffalse
+https://en.wikipedia.org/wiki/Connection_(vector_bundle)
 \fi
 
 
 \newpage
 \chapter{∞-Connections}
+
+Connections are elements of the free abelian group action on an A-algebra over A, and ∞-connections are ...\\
 
 \iffalse
 https://en.wikipedia.org/wiki/Connection_(vector_bundle)
@@ -1059,6 +1524,10 @@ https://www.universiteitleiden.nl/binaries/content/assets/science/mi/scripties/b
 Given an $E^{\infty}$-algebra...., we can form an \\
 
 
+\iffalse
+https://en.wikipedia.org/wiki/Connection_(vector_bundle)
+\fi
+
 
 \newpage
 \chapter{Tensor Product of Lie-Algebra Representations}
@@ -1067,9 +1536,7 @@ Given an $E^{\infty}$-algebra...., we can form an \\
 
 
 \newpage
-\chapter{L${}^{\infty}$-Representations}
-
-
+\chapter{L${}^{\infty}$-Algebra Representations}
 
 
 
@@ -1084,53 +1551,21 @@ Given an $E^{\infty}$-algebra...., we can form an \\
 \item Eilenberg, S., \& MacLane, S. (1945). Relations Between Homology and Homotopy Groups of Spaces. Proceedings of the National Academy of Sciences of the United States of America, 31(2), 83–87. 
 \end{enumerate}
 
+Further reading:
 
-
+\begin{enumerate}
+\item \href{https://ncatlab.org/nlab/show/Gamma-space}{The nlab article on ∞-spaces}
+\item \href{https://amathew.wordpress.com/2012/09/16/segals-infinite-loop-space-machine/}{A blog post of Akhil Matthew explaining how Bⁿ X ≅ Ω Bⁿ⁺¹ X for an ∞-space X and n ≥ 2}
+\item \href{https://ncatlab.org/nlab/show/Eckmann-Hilton+argument#:~:text=In%20its%20original%20form%2C%20the,or%20Groups%20is%20necessarily%20commutative.}{The n-lab article on the Eckman-Hilton argument}
+\item \href{http://www.math.uchicago.edu/~may/PAPERS/mayi.pdf}{Operads, Algebras, and Modules}, an exposition of J. P. May.
+\end{enumerate}
 
 
 \newpage
 \ \\
 \thispagestyle{empty}
-\pagecolor{Yellow}
-
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
