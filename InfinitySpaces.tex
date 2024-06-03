@@ -519,6 +519,130 @@ Here are the packages that I use
 
 \newpage
 
+
+\iffalse
+░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░   
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░
+\fi
+\newpage
+\section{Unicode}
+
+Here is a list of the unicode characters we will use:
+
+{\footnotesize
+\begin{center}
+\begin{tabular}{|| l || l || l || l ||} 
+\hline
+$\texttt{Symbol}$ & $\texttt{Unicode}$ & \texttt{VSCode shortcut} & $\texttt{Use}$\\
+\hline
+\hline
+\multicolumn{4}{||c||}{\texttt{Lean's Kernel}} \\
+\hline
+\hline
+× & 2A2F & \backslash\texttt{times} & Product of types\\
+\hline
+→ & 2192 & \backslash\texttt{rightarrow}  & Hom of types\\
+\hline
+⟨,⟩ & 27E8,27E9 & \backslash\texttt{langle},\backslash\texttt{rangle}  & Product term introduction\\
+\hline
+↦ & 21A6 &\backslash\texttt{mapsto}  & Hom term introduction\\
+\hline
+∧ & 2227 &\backslash\texttt{wedge}  & Conjunction \\
+\hline
+∨ & 2228 &\backslash\texttt{vee}  & Disjunction \\
+\hline
+∀ & 2200 &\backslash\texttt{forall}  & Universal quantification \\
+\hline
+∃ & 2203 &\backslash\texttt{exists}  & Existential quantification\\
+\hline
+¬ & 00AC &\backslash\texttt{neg}  & Negation\\
+\hline
+\hline
+\multicolumn{4}{||c||}{\texttt{Variables and Constants}} \\
+\hline
+\hline
+ᵃ,ᵇ,ᶜ,...,ᶻ & 1D52,1D56 & & Variables and constants \\
+\hline
+⁰,¹,²,³,⁴,⁵,⁶,⁷,⁸,⁹ & 1D52,1D56 &  & Variables and constants \\
+\hline
+⁻ & 207B &  & Variables and constants \\
+\hline
+₀,₁,₂,₃,₄,₅,₆,₇,₈,₉ & 2080 - 2089 & \backslash\texttt{0}-\backslash\texttt{9} & Variables and constants\\
+\hline
+𝔸,...,ℤ & 1D538 &  &  \\
+\hline
+𝕒,...,𝕫 & 1D552 &  &  \\
+\hline
+𝐀,...,𝐙 & 1D41A &  &  \\
+\hline
+𝐚,...,𝐳 & 1D41A &  &  \\
+\hline
+\texttt{α}-\texttt{ω},\texttt{A}-\texttt{Ω} & 03B1-03C9 & & Variables and constants\\
+\hline
+\hline
+\multicolumn{4}{||c||}{\texttt{Categories}} \\
+\hline
+\hline
+ 𝟙 & 1D7D9 & \backslash\texttt{b1}  & The identity morphism\\
+\hline
+ ∘ & 2218 & \backslash\texttt{circ}  & Composition\\
+ \hline
+ \hline
+ \multicolumn{4}{||c||}{\texttt{Bicategories}} \\
+ \hline 
+ \hline
+ • & 2022  & \backslash\texttt{smul}  & Horizontal composition of objects\\ 
+  \hline
+  \hline
+ \multicolumn{4}{||c||}{\texttt{Adjunctions}} \\
+\hline
+\hline
+⇄ & 21C4 & \backslash\texttt{rightleftarrows}  & Adjunctions \\
+\hline
+⇆ & 21C6 & \backslash\texttt{leftrightarrows}  & Adjunctions \\
+\hline
+𛲔 & 1BC94 &  & Right adjoints\\
+\hline
+ॱ & 0971 &  & Left adjoints \\
+\hline
+⊣ & 22A3 & \backslash\texttt{dashv}  & The condition that two functors are adjoint \\
+\hline
+\hline
+\multicolumn{4}{||c||}{\texttt{Monads and Comonads}} \\
+\hline
+\hline
+?,¿ & 003F, 00BF & ?,\backslash\texttt{?}  & The corresponding (co)monad of an adjunction\\
+\hline
+!,¡ & 0021, 00A1 & !, \backslash\texttt{!}  & The (co)-Eilenberg-(co)-Moore adjunction \\
+\hline
+ꜝ,ꜞ & A71D, A71E &  & The (co)exponential maps\\
+\hline
+\hline
+\multicolumn{4}{||c||}{\texttt{Miscellaneous}} \\
+\hline
+\hline
+∼ & 223C & \backslash\texttt{sim} & Homotopies \\
+\hline
+≃ & 2243 & \backslash\texttt{equiv}  & Equivalences \\
+\hline
+≅ & 2245 & \backslash\texttt{cong}  & Isomorphisms \\
+\hline
+⊥ & 22A5 & \backslash\texttt{bot}  & The overobject classifier \\
+\hline
+∞ & 221E & \backslash\texttt{infty}  & Infinity categories and infinity groupoids\\ 
+\hline
+${}^{\leftrightarrow}$ & 20D7 &  & Homotopical operations on ∞-categories \\
+\hline
+${}^{\rightarrow}$ & 20E1 &  & Homotopical operations on ∞-groupoids \\
+\hline
+\end{tabular}
+\end{center}}
+
 \section{Introduction}
 
 \noindent\textcolor{Red}{\rule{16cm}{1mm}}
@@ -533,17 +657,26 @@ Here are the packages that I use
 \end{center}
 \noindent\textcolor{Red}{\rule{16cm}{1mm}}
 
+How d is to D as unitial is to actional, and yet d² is 0 for chain complexes (different than globular sets), and not so for D. This suggests that we consider complexes in general rather than those particular complexes arising from globular abelian groups or globular ∞-spaces, in which d² = 0. What remains is an understanding of tensor product and a "sign" which accompanies it. Even though tensor product is determined up to isomorphism by being adjoint to a graded hom, the addition of the sign allows for the free DGA and free differential graded ∞-space constructions.\\
+
+Hence in this document we take the approach of thinking about presheaves and ∞-presheaves over the diagram ⋯ ⭢ • ⭢ • ⭢ • ⭢ ⋯, without a square-zero condition. Those presheaves (in abelian groups) and ∞-presheaves (in ∞-spaces) which arise from ∞-groupoids have this condition, but reside within a larger situation in which the main constructions extend.\\
+
+All of this produces less confusion in regards to \\
+
+
+Eℕ...\\
+
+
 
 \begin{enumerate}
-\item In this text I would like to develop a functorial construction of the classifying space in homotopy which can be applied indefinitely.
-\item This construction is an endofunctor of algebras for operadic groups in operadic groups in ∞-Grpd.
-\item 
+\item A functorial construction of the classifying space in homotopy which can be applied indefinitely.
+\item This construction will be an endofunctor of operadic groups in operadic groups in ∞-Grpd.
+\item I would like to notate it as B¹. 
 \end{enumerate}
- I would like to notate it as B¹. 
 
+The topics here feature the Eckman-Hilton argument and the abelian nature of π₂ at their core. We can understand these using continuous functions out of the square of the unit interval γ⃡² or the square of the directed unit interval γ⃗². In the case of a based ∞-groupoid X, π₂ is first defined using continuous functions f : I² ⭢ X such that f((x,y)) is sent to the base of X when either x or y is 0.\\
 
 This notation distinguishes 
-
 
 my attempt at an abelian-classifying-space construction which is an endofunctor of grouplike E${}^{\infty}$-spaces, here refered to as ∞-spaces, from the classifying-space construction involving ∞-groupoids and grouplike A${}^{\infty}$-spaces. Note that our ∞-categories always have r = 1, i.e. ∞ is short for (∞,1).\\
 
@@ -555,10 +688,22 @@ In ```TheWhiteheadTheoremandTwoVariations''', we developed two models of ∞-Grp
 B¹ : OperadicGroup • OperadicGroup ∞-Grpd ⭢ OperadicGroup • OperadicGroup ∞-Grpd
 \end{center}
 
-∞-Spaces ...
+\iffalse
+Without compactness or local compactness we only have an operadic smash product.
+\fi
 
+\iffalse
+The category of ∞-spaces intermediates the category of spectra and the category of ∞-groupoids.\\
+\fi
 
-In this section, which makes use of the previous section concerning Haar integral, I intend to cover the ordinary versions of Poincare duality, Pontrjagin duality, and Fourier duality, as well as versions of these theorems using language enabled by the previous repositories. This won't culminate until far into the future, so for now I have jotted down some sketches.\\
+\iffalse
+https://www.youtube.com/watch?v=I81DHkDNfTs
+\fi
+
+\iffalse
+The natural and organic failures that have come before make people apprehensive about the straightforward approach here.
+\fi
+
 
 \iffalse
 https://redprl.org/
@@ -567,7 +712,7 @@ rzk (new!)
 \fi
 
 \iffalse
-- glueing in with Joel Riou's API
+- glueing in with Joel Riou's API (powerful)
 - convenient widgets
 \fi
 
@@ -938,6 +1083,12 @@ Let $\texttt{A}$ be an abelian group, and let $n \in \mathbb{N}$ be a non-negati
 \end{definition}
 
 
+\subsection{The Postnikov Tower}
+
+
+\subsection{The Whitehead Tower}
+
+
 \section{Chain Complexes}
 
 \begin{definition}
@@ -1058,6 +1209,15 @@ B¹
 Bⁿ is B¹ • Bⁿ⁻¹.
 \end{definition}
 
+\subsection{The Postnikov Tower}
+
+Here I would like to construct the Postnikov tower from a different perspective, using B¹.\\
+
+\subsection{The Whitehead Tower}
+
+Here I would like to construct the Whitehead tower from a different perspective, using B¹.\\
+
+
 
 \section{Chain Complexes}
 
@@ -1155,6 +1315,106 @@ S\_(???) in general...
 In forming the free ∞-space on an ∞-groupoid, based ∞-groupoids intermediate the construction.
 \fi
 
+\iffalse
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{||l || l || l ||} 
+ \hline
+ & \multicolumn{2}{||c||}{\texttt{Eight Free Constructions in Algebra}} \\
+ \hline
+ \hline 
+ & \multicolumn{2}{||c||}{\texttt{Cartesian}} \\
+ \hline
+  & \texttt{Strict} & \texttt{Lax}   \\
+ \hline
+ \texttt{Unitial}  & ??? : Map ??? ⇄ InternalAbelianGroup (Map ???) : ??? & ??? : Map ??? ⇄ (OperadicAbelianGroup (Map ???)) : ???  \\
+ \hline
+ \texttt{Actional} & ??? : ??? ⇄ InternalAbelianGroupAction ??? : ??? & ??? : ??? ⇄ OperadicAbelianGroupAction ??? : ??? \\
+ \hline
+ \hline
+  & \multicolumn{2}{||c||}{\texttt{Tensorial}} \\
+ \hline
+  & \texttt{Strict} & \texttt{Lax}   \\
+ \hline
+ \texttt{Unitial}  & ??? : ∞-Grpd₋₁ ⇄ InternalAbelianGroup : ???  &  ??? : ??? ⇄ OperadicAbelianGroup ∞-Grpd₋₁ : ???  \\
+ \hline
+ \texttt{Actional} & ??? : ??? ⇄ InternalAbelianGroupAction ???  : ???  &  ??? : ??? ⇄ OperadicAbelianGroupAction ??? : ??? \\
+ \hline
+\end{tabular}
+\end{center}
+}
+
+
+
+
+
+
+
+
+
+
+
+  & \multicolumn{2}{||c||}{\texttt{Tensorial}} \\
+ \hline
+  & \texttt{Strict} & \texttt{Lax}   \\
+ \hline
+ \texttt{Unitial}  & ??? : ∞-Grpd₋₁ ⇄ InternalAbelianGroup  : ???  &  ??? : ??? ⇄ OperadicAbelianGroup ∞-Grpd₋₁ : ???  \\
+ \hline
+ \texttt{Actional} & ??? : ??? ⇄ InternalAbelianGroupAction ???  : ???  &  ??? : ??? ⇄ OperadicAbelianGroupAction ??? : ??? \\
+ \hline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ \iffalse
+  \hline
+    \texttt{InternalAbelianGroup Ch² AbelianGroup}  & \texttt{InternalAbelianGrouAction Ch² AbelianGroup} & \texttt{OperadicAbelianGroup ∞-Ch² ∞-Space} & \texttt{OperadicAbelianGroupAction ∞-Ch² ∞-Space} \\ 
+{
+\footnotesize
+\begin{center}
+\begin{tabular}{||l || l || l || l ||} 
+ \hline
+  \multicolumn{4}{||c||}{\texttt{??? Structures}} \\
+ \hline
+ \multicolumn{2}{||c||}{\texttt{Strict}}  &  \multicolumn{2}{||c||}{\texttt{Lax}} \\
+ \hline
+ \texttt{Unitial} &  \texttt{Actional}  &  \texttt{Unitial} &  \texttt{Actional}\\
+ \hline \hline
+ \texttt{InternalMonoid AbelianGroup}  & \texttt{InternalMonoidAction AbelianGroup} & \texttt{OperadicMonoid ∞-Space} & \texttt{OperadicMonoidAction ∞-Space} \\ 
+ \hline
+  \texttt{InternalMonoid Ch AbelianGroup}  & \texttt{InternalMonoidAction Ch AbelianGroup} & \texttt{OperadicMonoid ∞-Ch ∞-Space} & \texttt{OperadicMonoidAction ∞-Ch ∞-Space} \\ 
+  \hline
+  \texttt{InternalMonoid Ch² AbelianGroup}  & \texttt{InternalMonoidAction Ch² AbelianGroup} & \texttt{OperadicMonoid ∞-Ch² ∞-Space} & \texttt{OperadicMonoidAction ∞-Ch² ∞-Space} \\ 
+  \hline
+ \hline
+ \texttt{InternalCommutativeMonoid} & \texttt{InternalCommutativeMonoidAction} & \texttt{OperadicCommutativeMonoid} & \texttt{OperadicCommutativeMonoidAction} \\
+ \hline
+  \texttt{InternalCommutativeMonoid Ch AbelianGroup}  & \texttt{InternalCommutativeMonoidAction Ch AbelianGroup} & \texttt{OperadicCommutativeMonoid ∞-Ch ∞-Space} & \texttt{OperadicMonoidAction ∞-Ch ∞-Space} \\ 
+  \hline
+  \texttt{InternalCommutativeMonoid Ch² AbelianGroup}  & \texttt{InternalCommutativeMonoidAction Ch² AbelianGroup} & \texttt{OperadicCommutativeMonoid ∞-Ch² ∞-Space} & \texttt{OperadicCommutativeMonoidAction ∞-Ch² ∞-Space} \\ 
+  \hline
+    \texttt{InternalAbelianGroup Ch² AbelianGroup}  & \texttt{InternalAbelianGrouAction Ch² AbelianGroup} & \texttt{OperadicAbelianGroup ∞-Ch² ∞-Space} & \texttt{OperadicAbelianGroupAction ∞-Ch² ∞-Space} \\ 
+ \hline
+\end{tabular}
+\end{center}
+}
+\fi
+
+
+\fi
+
+
 
 \part{RINGS, COMMUTATIVE RINGS, A${}^{\infty}$-RINGS, AND E${}^{\infty}$-RINGS}
 
@@ -1222,6 +1482,7 @@ Commutative rings and CDGAs
 \end{enumerate}
 
 
+
 \newpage
 \chapter{A${}^{\infty}$-Rings and E${}^{\infty}$-Rings}
 
@@ -1260,6 +1521,11 @@ https://leanprover.zulipchat.com/#narrow/stream/116395-maths/topic/Tensor.20prod
 \begin{enumerate}
 \item What's more clear is that the ∞-analogous are more difficult to reconcile with the choices made for the first sixteen structures and the four doubled structures (see the section on the Eckman-Hilton argument).
 \end{enumerate}
+
+\iffalse
+C ⊗??? ⭢ ??? ⭢ ??? ⭢ 0
+\fi
+
 
 
 \newpage
@@ -1332,6 +1598,10 @@ In this second part, I define eight adjunctions associated to the algebraic stru
 \begin{enumerate}
 \item \href{https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/The.20classification.20of.20Lie.20algebras}{A thread on the classification of Lie algebras}.
 \end{enumerate}
+
+The Jacobi identity says that the lie-bracket is a self-derivation.\\
+
+
 
 
 \newpage
@@ -1461,6 +1731,28 @@ https://amathew.wordpress.com/2011/05/14/the-cotangent-complex-i-group-objects-i
 \iffalse
 https://en.wikipedia.org/wiki/Connection_(vector_bundle)
 \fi
+
+A connection on a vector bundle can be understood as an element of:
+
+\begin{enumerate}
+\item the free graded module given a connection
+\item Ω⁰(X) ⊗ V ⭢ Ω¹(X) ⊗ V such that (∇ X) f ⊗ x = (df) ⊗ x + f((∇ X) (1 ⊗ x))
+\item Ω¹([V,V])
+\end{enumerate}
+
+This can be understood in terms of the theorem that End${}_{A}$(V ⊗ A) is isomorphic to End${}_{k}$(V) ⊗ A for a free A-module V and certain condition on the k-algebra $A$, where we here take A to be Ωॱ(X).\\
+
+We can understand the first in terms of the Ω⁰(X)-module Ωⁿ(X) ⊗ [V,V] ⭢ Ωⁿ⁺¹(X) ⊗ [V,V] in which we extend ∇ to feature a the rule of (df) ⊗ x + (-1)ⁱʲ * f((∇ X) (1 ⊗ x)), and write $d_{∇}$ for this, but it doesn't form a chain complex. Instead, we obtain an element of Ω²([V,V]) from $d_{∇} d_{∇} x$ for any section $x$ of $V$. Defining $F_{∇}$ to be dA - A ∧ A, wedge with $F_{∇}$ is the same as $d_{∇} d_{∇}$.\\
+
+\iffalse
+If A and B are matrices close enough to 1, then we can unambiguously take their logarithm after pulling back to a square whose diagonal has a 2-norm of 1 or less.\\
+\fi
+
+\iffalse
+https://mathoverflow.net/questions/455423/obstructions-to-the-existence-of-a-flat-connection-on-a-vector-bundle
+\fi
+
+
 
 
 \newpage
