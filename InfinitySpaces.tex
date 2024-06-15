@@ -394,7 +394,6 @@ Here are the packages that I use
 \ \\
 }
 
-
 \begin{document}
 
 \thispagestyle{empty} 
@@ -447,7 +446,6 @@ Here are the packages that I use
 \begin{center}
 \includegraphics[scale=0.4]{eckhil.png}
 \end{center}
-
 
 
 
@@ -646,15 +644,20 @@ ${}^{\rightarrow}$ & 20E1 &  & Homotopical operations on ∞-groupoids \\
 \end{center}
 \noindent\textcolor{Red}{\rule{16cm}{1mm}}
 
-How d is to D as unitial is to actional, and yet d² is 0 for chain complexes (different than globular sets), and not so for D. This suggests that we consider complexes in general rather than those particular complexes arising from globular abelian groups or globular ∞-spaces, in which d² = 0. What remains is an understanding of tensor product and a "sign" which accompanies it. Even though tensor product is determined up to isomorphism by being adjoint to a graded hom, the addition of the sign allows for the free DGA and free differential graded ∞-space constructions.\\
+d is to D as unitial is to actional, and yet d² = 0 for differential graded algebras, which is not true for D² and their actions. This suggests an approach to homological algebra which considers complexes in general rather than those globular abelian groups or globular ∞-spaces arising from, in which d² = 0. What remains is an understanding of tensor product and a "sign" which accompanies it. Even though tensor product is determined up to isomorphism by being adjoint to a graded hom, the addition of the sign allows for the free DGA and free differential graded ∞-space constructions.\\
 
-Hence in this document we take the approach of thinking about presheaves and ∞-presheaves over the diagram ⋯ ⭢ • ⭢ • ⭢ • ⭢ ⋯, without a square-zero condition. Those presheaves (in abelian groups) and ∞-presheaves (in ∞-spaces) which arise from ∞-groupoids have this condition, but reside within a larger situation in which the main constructions extend.\\
+This change opens up a new convenience, since presheaves $\texttt{[T,Ab]}$ and ∞-presheaves (in $\texttt{[T,∞-Spc]}$) over the diagram T := ⋯ ⭢ • ⭢ • ⭢ • ⭢ ⋯ come with no square-zero condition and yet can still be geometrically realized realized. The same is true for pr...\\
+
+ Those presheaves (in abelian groups) and ∞-presheaves (in ∞-spaces) which arise from ∞-groupoids have this condition, but reside within a larger situation in which the main constructions extend.\\
 
 All of this produces less confusion in regards to \\
 
 
+\iffalse
 Eℕ...\\
 
+Segal's
+\fi
 
 
 \begin{enumerate}
@@ -671,7 +674,7 @@ my attempt at an abelian-classifying-space construction which is an endofunctor 
 
 I will write Bⁿ for the n-fold composition of B¹, Pow B n. Note that B is not an endofunctor so that it cannot be iterated. It is more typical to divide up the construction B, for instance constructing the Grassmanians Gr${}^{\infty}$(ℂ,n) ≅ B.obj GLₙ(ℂ), from which it follows that [-,Gr${}^{\infty}$(ℂ,n)] is equivalent to the category of GLₙ(ℂ)-principal bundles and therefore to n-dimensional vector bundles bundles.\\
 
-In ```TheWhiteheadTheoremandTwoVariations''', we developed two models of ∞-Grpd\_(A) and ∞-Grpd\_(B). These will produce two models on which B¹ can be defined:
+In ```TheWhiteheadTheoremandTwoVariations''', we will have developed a model of ∞-Grpd based on . These will produce two models on which B¹ can be defined:
 
 \begin{center}
 B¹ : OperadicGroup • OperadicGroup ∞-Grpd ⭢ OperadicGroup • OperadicGroup ∞-Grpd
@@ -1228,6 +1231,9 @@ Here I would like to construct the Whitehead tower from a different perspective,
 
 \section{Tensor Product of Chain Complexes}
 
+\begin{enumerate}
+\item \href{https://github.com/leanprover-community/mathlib4/blob/8666bd82efec40b8b3a5abca02dc9b24bbdf2652/Mathlib/CategoryTheory/Monoidal/Category.lean#L136-L184}{Tensor product of chain complexes}. 
+\end{enumerate}
 
 
 \newpage
